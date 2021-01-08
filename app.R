@@ -187,7 +187,7 @@ server <- function(input, output, session){
   output$map <- renderImage({
     width  <- session$clientData$output_map_width
     height <- session$clientData$output_map_height
-    filename <- paste('./', guess_reactive$picName,'.png', sep='')
+    filename <- paste('./www/', guess_reactive$picName,'.png', sep='')
     
     list(src = filename,
          width = width,
